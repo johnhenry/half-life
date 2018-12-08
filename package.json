@@ -1,0 +1,22 @@
+{
+    "name": "half-life",
+    "version": "0.0.0",
+    "description": "",
+    "main": "./dist/index.js",
+    "scripts": {
+        "test": "node test/index.js",
+        "build:dist": "rollup es6/index.js --file dist/index.js --format cjs"
+    },
+    "pre-commit": [
+        "build:dist"
+    ],
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "pre-commit": "1.2.2",
+        "rollup": "^0.67.4",
+        "tape": "^4.9.1",
+        "webpack": "^4.27.1"
+    }
+}
